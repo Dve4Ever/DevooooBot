@@ -5,11 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-
-    // Clear
-    if (msg.startsWith(prefix + 'CLEAR')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
+    // Purge
+    if (msg.startsWith(prefix + 'PURGE')) { // This time we have to use startsWith, since we will be adding a number to the end of the command.
         // We have to wrap this in an async since awaits only work in them.
-        async function clear() {
+        async function purge() {
             message.delete(); // Let's delete the command message, so it doesn't interfere with the messages we are going to delete.
 
             // Now, we want to check if the user has the `bot-commander` role, you can change this to whatever you want.
@@ -21,7 +20,7 @@ client.on('ready', () => {
             // We want to check if the argument is a number
             if (isNaN(args[0])) {
                 // Sends a message to the channel.
-                message.channel.send('Please use a number as your arguments. \n Usage: ' + prefix + 'clear <amount>'); //\n means new line.
+                message.channel.send('Please use a number as your arguments. \n Usage: ' + prefix + 'purge <amount>'); //\n means new line.
                 // Cancels out of the script, so the rest doesn't run.
                 return;
             }
@@ -35,8 +34,8 @@ client.on('ready', () => {
 
         }
 
-        // We want to make sure we call the function whenever the clear command is run.
-        clear(); // Make sure this is inside the if(msg.startsWith)
+        // We want to make sure we call the function whenever the purge command is run.
+        purge(); // Make sure this is inside the if(msg.startsWith)
 
     }
 });
@@ -50,13 +49,6 @@ bot.on('ready', () => {
 });
 
 bot.login('<token>');
-    }
-});
-
-client.on('message', message => {
-    if (message.content === 'test') {
-    	message.channel.send('?clear 1');
-  	}
 });
 
 client.on('message', message => {
