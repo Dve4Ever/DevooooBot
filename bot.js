@@ -3,11 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
-    print('Eingeloggt als')
-    print(client.user.name)
-    print(client.user.id)
-    print('-----------')
-await client.change_presence(game=discord.Game(name="on devoooo.weebly.com/discordbot.html"))
+   
 });
 
 client.on('message', message => {
