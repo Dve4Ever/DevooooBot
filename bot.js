@@ -13,13 +13,13 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'bing') {
-    	message.reply('BONG!');
+    	message.channel.send('BONG!');
   	}
 });
 
 client.on('message', message => {
     if (message.content === 'test') {
-    	message.reply('?purge 1');
+    	message.channel.send('?purge 1');
     }
     
 });
