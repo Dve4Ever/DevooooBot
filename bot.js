@@ -22,6 +22,12 @@ client.on('message', message => {
     if (message.content === 'test') {
     	message.channel.send('?purge 1');
     }
+});
+
+client.on('message', message => {
+    if (message.content === 'test') {
+    	message.channel.send('?purge 1');
+    } 
     
 });
 
