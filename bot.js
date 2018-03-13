@@ -25,7 +25,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'test') {
+    if (message.content === 'pee is stored in the balls') {
     	message.channel.send('?purge 1');
     } 
     
