@@ -26,9 +26,8 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'pee is stored in the balls') {
-    	message.channel.send('?purge 1');
+    	message.channel.send('Hey! Thats racist!');
     } 
-    
 });
 
 // THIS  MUST  BE  THIS  WAY
