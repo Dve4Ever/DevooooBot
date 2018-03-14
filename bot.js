@@ -37,7 +37,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'your mum gay') {
-    	message.channel.send('Yours is too!');
+    	message.channel.send('NO, YOU!');
     }
 });
 
