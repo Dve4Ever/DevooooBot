@@ -8,13 +8,13 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.channel.send('PONG!');
-  	}
+    }
 });
 
 client.on('message', message => {
     if (message.content === 'bing') {
     	message.channel.send('BONG!');
-  	}
+    }
 });
 
 client.on('message', message => {
@@ -32,13 +32,13 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'Whats 9+10') {
     	message.channel.send('21!');
-  	}
+    }
 });
 
 client.on('message', message => {
     if (message.content === 'your mum gay') {
     	message.channel.send('Yours is too!');
-  	}
+    }
 });
 
 client.on('message', message => {
