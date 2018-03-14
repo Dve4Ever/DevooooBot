@@ -1,4 +1,6 @@
-
+var draw = function() {
+var coin = round(random(1,2));
+};
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -59,6 +61,14 @@ client.on('message', message => {
     	message.channel.send('Thats classified as an weapon!');
     } 
 });
+
+client.on('message', message => {
+    if (message.content === '+coinflip') {
+        if(coin === 1) {message.channel.send('Heads!');}
+            else {message.channel.send('Tails!');}
+  	}
+});
+
  if (!suffix) {
     var newamount = "2";
   } else {
