@@ -24,8 +24,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'pee is stored in the balls') {
-    	message.channel.send('Hey! Thats racist!');
+    if (message.content === 'devo') {
+    	message.channel.send('**DEVOOOO**');
     } 
 })
 
@@ -58,6 +58,12 @@ client.on('message', message => {
     	message.channel.send('Thats classified as an weapon!')
   	}
 });
+
+client.on('message', message => {
+    if (message.content === 'bob') {
+    	message.channel.send('Bob likes minecraft, and fortnite, and sims. Be like bob.');
+    } 
+})
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
