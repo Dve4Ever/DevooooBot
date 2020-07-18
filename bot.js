@@ -3,6 +3,11 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
+
+
+client.on('message', message => {
+    if (message.content === 'work') {
+       message.reply('working');}});
 client.on('message', message => {
     if (message.content === '!website') {
        message.reply('My Website is: https://staydevoooo.com);}});
