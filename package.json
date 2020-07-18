@@ -1,7 +1,7 @@
 
 {
-  "name": "DevooooBot",
-  "description": "Dev4Ever's Bot",
+  "name": "beans",
+  "description": "i am a bean",
   "version": "1.0.0",
   "main": "bot.js",
   "scripts": {
